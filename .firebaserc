@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "appdemo-68c75": {
+      "hosting": {
+        "appDemo": [
+          "appdemo-68c75"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "appdemo-68c75"
+  }
+}

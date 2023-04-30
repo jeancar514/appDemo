@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/aos/dist/aos.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/aos/dist/aos.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -100,8 +103,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "appDemo:build:production",
+            "firebaseProject": "appdemo-68c75",
+            "firebaseHostingSite": "appdemo-68c75"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "2e1bf6ed-6efd-4ab7-8314-0cbe26c74f28"
   }
 }
