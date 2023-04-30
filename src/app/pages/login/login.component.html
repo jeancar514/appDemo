@@ -1,17 +1,63 @@
 <div class="flex-2">
-     <div>
+    <div>
+      <div *ngIf="login; else elseTitleRegister" >
         <h2 class="title">La plataforma de comunicación para empleados.</h2>
-        <h4 class="subtitle">Explore infinitas formas de mejorar la experiencia de tus empleados con tu propia plataforma.</h4>
+        <h4 class="subtitle">Explore infinitas formas de mejorar la experiencia de tus empleados <br> <span class="subtitleBlue">con tu propia plataforma.</span></h4>
         <p class="text">Notocias relacionadas a la empresa , actividades, foros, sobre la comunidad y mucho mas</p>
-     </div>
-     <div>
-        <mat-card class="card">
+      </div>
+      <ng-template #elseTitleRegister>
+        <img src="../../../assets/register.png" alt="" >
+      </ng-template>
+    </div>
+    <div>
+      <div *ngIf="login; else elseFormRegister" >
+        <div>
+          <mat-card class="card" >
             <mat-card-content>
-              <form [formGroup]="formGroupLogin" class="flexColumn">
+              <form [formGroup]="formGroupLogin" class="flexColumn" >
+                <div class="btn-login-register">
+                  <button [ngClass]="(login == true) ?'blue' :'trasparent'" (click)="formLogin()">INICIA SESION</button>
+                  <button [ngClass]="(login != true) ?'blue' :'trasparent'" (click)="formRegister()">REGISTRATE</button>
+                </div>
                 <input  name="email" placeholder="CORREO ELECTRÓNICO O USUARIO" formControlName="usernameEmail">
-                <input  name="email"  placeholder="CONTRASEÑA" formControlName="password">
+                <input  name="password"  placeholder="CONTRASEÑA" formControlName="password">
+                <button class="botonGoogle"><img src="../../../assets/google.png" alt="">INICIA SESIÓN CON GOOGLE</button>
+                <button class="btn-login" (click)="submitLogin()" >INICIAR SESIÓN</button>
+                <a href="#" class="link-password">Haz olvidado la contraseña</a>
               </form>
             </mat-card-content>
-        </mat-card>
-     </div>
+          </mat-card>
+        </div>
+      </div>
+
+      <ng-template #elseFormRegister>
+        <div>
+          <mat-card class="card"  >
+            <mat-card-content>
+              <form [formGroup]="formGroupRegister" class="flexColumn">
+                <div class="btn-login-register">
+                  <button [ngClass]="(login == true) ?'blue' :'trasparent'" (click)="formLogin()">INICIA SESION</button>
+                  <button [ngClass]="(login == false) ?'blue' :'trasparent'" (click)="formRegister()">REGISTRATE</button>
+                </div>
+                <input  name="name" placeholder="NOMBRES Y APELLIDOS" formControlName="name">
+                <input  name="usename" placeholder="NOMBRE DE USUARIO" formControlName="username">
+                <input  name="email" placeholder="CORREO ELECTRÓNICO O USUARIO" formControlName="email">
+                <input  name="password"  placeholder="CONTRASEÑA" formControlName="password">
+                <button class="botonGoogle"><img src="../../../assets/google.png" alt="">REGISTRATE CON GOOGLE</button>
+                <button class="btn-login" (click)="submitRegister()">CREAR CUENTA</button>
+              </form>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </ng-template>
+    </div>
+</div>
+
+<div data-aos="flip-left"
+      data-aos-duration="3000">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quidem voluptatibus odit a nemo sequi nisi reiciendis, vel necessitatibus, tenetur aliquid dolorum at aspernatur, suscipit cum quia ullam quam delectus.</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quidem voluptatibus odit a nemo sequi nisi reiciendis, vel necessitatibus, tenetur aliquid dolorum at aspernatur, suscipit cum quia ullam quam delectus.</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quidem voluptatibus odit a nemo sequi nisi reiciendis, vel necessitatibus, tenetur aliquid dolorum at aspernatur, suscipit cum quia ullam quam delectus.</p>
 </div>

@@ -3,23 +3,25 @@ $colorBlueAqua: rgb(142, 248, 225);
 $colorWhite: white;
 
 .card {
-    width: 600px;
+    width: 40vw;
     padding: 50px;
     border-radius: 20px;
-    background: linear-gradient(45deg, rgba(53, 53, 53, 0.7) 0%, rgba(116, 115, 115, 0.7) 100%);
+    background: linear-gradient(90deg, rgba(53, 53, 53, 0.7) 0%, rgba(116, 115, 115, 0.7) 100%);
   }
   .flex-2{
     display: flex;
-    margin: 50px 5px;
+    margin: 50px 10%;
     justify-content: space-around;
   }
   .flexColumn{
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   input{
-    margin: 30px 0px;
-    padding: 20px;
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px;
     border-radius: 20px;
     background-color: $colorWhite;
     border: none;
@@ -29,6 +31,91 @@ $colorWhite: white;
   .title{
     color: $colorWhite;
     letter-spacing: 2px;
-    font-size: 3em;
+    font-size: 2.5em;
+    font-weight: 500;
+  }
 
+  .subtitle{
+    margin-right: 20%;
+    color: $colorWhite;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .subtitleBlue{
+    color: $colorBlueAqua;
+  }
+
+  .text{
+    margin-right: 30%;
+    color: $colorWhite;
+    letter-spacing: 2px;
+    font-size: 1em;
+    font-weight: 100;
+  }
+
+  .btn-login-register{
+    background-color: white;
+    border-radius: 20px;
+    padding: 0px;
+    margin: 15px 0px;
+  }
+
+  .btn-login-register button{
+    padding: 5px 20px;
+    margin: 0px;
+    border-radius: 20px;
+    border: none; 
+    cursor: pointer;
+  }
+
+  .blue{
+    background-color: $colorBlue;
+    color: $colorWhite;
+  }
+
+  .blue:hover{
+    background-color: rgb(23, 46, 252);
+  }
+
+  .transparent{
+    background-color: transparent;
+  }
+
+  .botonGoogle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: gray;
+    padding: 2px 30px;
+    margin: 15px 0px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .botonGoogle img{
+    height: 30px;
+  }
+
+  .btn-login{
+    background-color: $colorBlue;
+    color: $colorWhite;
+    margin: 15px 0px;
+    padding: 5px 25px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-login:hover{
+    background-color: rgb(23, 46, 252);
+  }
+
+  .link-password{
+    margin: 15px 0px;
+    text-decoration: none;
+    color: $colorWhite;
   }
