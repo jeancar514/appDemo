@@ -1,24 +1,23 @@
+$colorBlue: rgb(25, 0, 255);
+$colorBlueAqua: rgb(142, 248, 225);
+$colorWhite: white;
+$colorGreen: rgb(55, 189, 66);
+
 .flex-3{
   display: flex;
   width:100vw;
 }
 
-.flex-3 div:nth-child(1){
+.flex-3-left{
   width:20%
 }
-.flex-3 div:nth-child(2){
+.flex-3-center{
   width:50%
 }
-.flex-3 div:nth-child(3){
+.flex-3-rigth{
   width:20%
 }
 
-
-
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
 
 // data user
 .date-user-img{
@@ -31,4 +30,33 @@
 .mat-mdc-card {
   box-shadow: none;
 }
+.date-user-ubication{
+  display: flex;
+  align-items: center;
 
+}
+.bx-map{
+  margin: 0px 10px;
+  color:$colorBlue ;
+  font-size: 1.5em;
+}
+
+// equip
+.equip div{
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.equip-img{
+  width: 30%;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.equip-circle{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $colorGreen;
+}
