@@ -5,58 +5,75 @@ $colorGreen: rgb(55, 189, 66);
 
 .flex-3{
   display: flex;
-  width:100vw;
+  width:100%;
 }
 
 .flex-3-left{
-  width:20%
+  width:25%
 }
 .flex-3-center{
-  width:50%
-}
-.flex-3-rigth{
-  width:20%
-}
-
-
-// data user
-.date-user-img{
-  border-radius:50%;
-  margin: 20px;
-}
-.date-user-content{
+  width:50%;
   text-align: center;
 }
-.mat-mdc-card {
-  box-shadow: none;
-}
-.date-user-ubication{
-  display: flex;
-  align-items: center;
-
-}
-.bx-map{
-  margin: 0px 10px;
-  color:$colorBlue ;
-  font-size: 1.5em;
+.flex-3-rigth{
+  width:25%
 }
 
-// equip
-.equip div{
-  display: flex;
-  align-items: center;
-  margin: 10px 0px;
+
+.data-user{
+  width: 100%;
+}
+.equipo{
+  width: 50%;
 }
 
-.equip-img{
-  width: 30%;
-  border-radius: 50%;
-  margin-right: 30px;
+.panel{
+  width: 80%;
+  border-radius: 20px;
 }
 
-.equip-circle{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: $colorGreen;
+.boton{
+  width: 80%;
 }
+
+// // data user
+// .date-user-img{
+//   border-radius:50%;
+//   margin: 20px;
+// }
+// .date-user-content{
+//   text-align: center;
+// }
+// .mat-mdc-card {
+//   box-shadow: none;
+// }
+// .date-user-ubication{
+//   display: flex;
+//   align-items: center;
+
+// }
+// .bx-map{
+//   margin: 0px 10px;
+//   color:$colorBlue ;
+//   font-size: 1.5em;
+// }
+
+// // equip
+// .equip div{
+//   display: flex;
+//   align-items: center;
+//   margin: 10px 0px;
+// }
+
+// .equip-img{
+//   width: 30%;
+//   border-radius: 50%;
+//   margin-right: 30px;
+// }
+
+// .equip-circle{
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
+//   background-color: $colorGreen;
+// }

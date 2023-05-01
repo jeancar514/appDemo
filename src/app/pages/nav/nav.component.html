@@ -1,0 +1,31 @@
+<div class="flex-3">
+    <div class="flex-3-left">
+        <a href="http://">TU MARCA AQUI</a>
+    </div>
+    <div class="flex-3-center">
+        <a href="http://">NOVEDADES</a>
+        <a href="http://">FOROS</a>
+        <a href="http://">REDES</a>
+        <a href="http://">INFORMACION</a>
+        <a href="http://">TEAM</a>
+        <a href="http://">COMUNIDAD</a>
+    </div>
+    <div class="flex-3-rigth">
+        <div class="search">
+            <mat-icon class="search-icon">search</mat-icon>
+            <a href="http://">BUSQUEDA</a>
+        </div>
+        <div>
+
+            <img mat-button [matMenuTriggerFor]="belowMenu" class="img-boton-desplegable" src="../../../assets/perfil/boton-desplegable.jpg" alt="">
+            <mat-menu #belowMenu="matMenu" yPosition="below" xPosition="after">
+                <button mat-menu-item>FRANCISCO DIAZ</button>
+                <button mat-menu-item>CONFIGURACION</button>
+                <button mat-menu-item>CERRAR SESION</button>
+                <button mat-menu-item>AYUDA</button>
+            </mat-menu>
+        </div>
+    </div>
+</div>
+<span class="linea">
+</span>

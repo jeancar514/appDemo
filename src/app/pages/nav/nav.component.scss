@@ -1,0 +1,56 @@
+
+$colorBlue: rgb(25, 0, 255);
+$colorBlueAqua: rgb(142, 248, 225);
+$colorWhite: white;
+$colorGreen: rgb(55, 189, 66);
+$colorGray: rgb(80, 79, 79);
+$colorBlack: black;
+
+a{
+    text-decoration: none;    
+    color: $colorGray;
+}
+
+.flex-3{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+.flex-3-center a{
+    margin: 5px 12px;
+}
+
+.linea{
+    margin: 0px 5%;
+    margin-bottom: 40px;
+    display: block;
+    height: 2px;
+    width: 90%;
+    background-color: $colorGray;
+    
+}
+
+.flex-3-rigth{
+    display: flex;
+    align-items: center;
+}
+
+
+.img-boton-desplegable{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.search-icon{
+    margin: 0px 10px ;
+}
