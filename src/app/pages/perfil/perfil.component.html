@@ -1,4 +1,4 @@
-<app-nav></app-nav>
+<app-nav (menuPerfilEvent)="menuPerfil($event)" ></app-nav>
 <div class="flex-3">
   <div class="flex-3-left">
     <img  class="data-user"  src="../../../assets/perfil/data-user.jpg" alt="sin foto">
@@ -6,7 +6,7 @@
   </div>
 
   <div class="flex-3-center" >
-    <img  class="panel"  src="../../../assets/perfil/notificaciones.jpg" alt="sin foto">
+    <img  class="panel"  src="../../../assets/perfil/{{panelSeleted}}" alt="sin foto">
   </div>
 
   <div class="flex-3-rigth">

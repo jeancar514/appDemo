@@ -19,10 +19,10 @@
 
             <img mat-button [matMenuTriggerFor]="belowMenu" class="img-boton-desplegable" src="../../../assets/perfil/boton-desplegable.jpg" alt="">
             <mat-menu #belowMenu="matMenu" yPosition="below" xPosition="after">
-                <button mat-menu-item>FRANCISCO DIAZ</button>
-                <button mat-menu-item>CONFIGURACION</button>
+                <button mat-menu-item (click)="menuPerfil(panels.notification)">FRANCISCO DIAZ</button>
+                <button mat-menu-item (click)="menuPerfil(panels.configuration)">CONFIGURACION</button>
                 <button mat-menu-item>CERRAR SESION</button>
-                <button mat-menu-item>AYUDA</button>
+                <button mat-menu-item (click)="menuPerfil(panels.ayuda)">AYUDA</button>
             </mat-menu>
         </div>
     </div>

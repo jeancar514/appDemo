@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatCardModule} from '@angular/material/card';
 import NavComponent from '../nav/nav.component';
+import { MenuPerfilService } from '../nav/menu-perfil.service';
 
 
 @Component({
@@ -12,5 +13,11 @@ import NavComponent from '../nav/nav.component';
   styleUrls: ['./perfil.component.scss']
 })
 export default class PerfilComponent {
+  panelSeleted:string = "notificaciones.jpg";
+
+
+  menuPerfil(event: string) {
+    this.panelSeleted = event;
+  }
 
 }
