@@ -29,6 +29,7 @@
             ],
             "styles": [
               "src/styles.scss",
+              "node_modules/boxicons/css/boxicons.scss",
               "node_modules/aos/dist/aos.css"
             ],
             "scripts": [
