@@ -34,9 +34,6 @@ $appDemo-theme: mat.define-light-theme((
 @include mat.all-component-themes($appDemo-theme);
 
 /* You can add global styles to this file, and also import other style files */
-body{
-    height: 100%;
-    background:linear-gradient(90deg, rgb(21, 3, 190), rgb(142, 248, 225));
-}
+
 html{ height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import LoginComponent from './pages/login/login.component';
 
 
 const routes: Routes = [
@@ -13,6 +12,11 @@ const routes: Routes = [
     path:"login",
     loadComponent: () => import('./pages/login/login.component'),
     title:'App - Login'
+  },
+  {
+    path:"perfil",
+    loadComponent: () => import('./pages/perfil/perfil.component'),
+    title:'App - Perfil'
   },
 ];
 
