@@ -4,7 +4,7 @@
         <h3>COMUNIDAD TU MARCA</h3>
         <img src="/assets/comunity/panel-comunity.jpg"  alt="dsad" />
     </div>
-    <div class="flex-2-item">
+    <div class="flex-2-item" *ngIf="viewNotes; else createNote">
         <button class="note-add" mat-fab extended color="primary">
             <mat-icon>add</mat-icon>
             Añadir nota
@@ -20,4 +20,12 @@
             </div>
         </div>
     </div>
+    <ng-template #createNote>
+        <div class="flex-2-item">
+            <button class="note-volver" mat-fab extended color="primary" (click)="createNote()">
+                <mat-icon>reply</mat-icon>
+            </button>
+            <img src="../../../assets/comunity/panel-nota.png" alt="">
+        </div>
+    </ng-template>
 </div>

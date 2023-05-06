@@ -15,6 +15,8 @@ import NavComponent from '../nav/nav.component';
 })
 export default  class ComunityComponent {
 
+  viewNotes:boolean = false; 
+
   notes = [
     {
       icon: "notifications_active",
@@ -23,18 +25,13 @@ export default  class ComunityComponent {
     },
     {
       icon: "notifications_active",
-      content: "Francisco Diaz agrego una nueva nota : mi cumpleaños al muro de la comunidad",
+      content: "Maria Gonclaves agrego una nueva nota : Hola! soy Maria al muro de la comunidad",
       date: "Hace 11 minutos"
     },
     {
       icon: "notifications_active",
-      content: "Francisco Diaz agrego una nueva nota : mi cumpleaños al muro de la comunidad",
-      date: "Hace 11 minutos"
-    },
-    {
-      icon: "notifications_active",
-      content: "Francisco Diaz agrego una nueva nota : mi cumpleaños al muro de la comunidad",
-      date: "Hace 11 minutos"
+      content: "Moises Arevalo agrego una nueva nota : Evento de musica al muro de la comunidad",
+      date: "Hace 9 horas"
     },
   ]; 
 
