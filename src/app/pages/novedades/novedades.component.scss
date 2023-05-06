@@ -1,12 +1,26 @@
+$colorBlue: rgb(22, 2, 199);
+$colorBlueAqua: rgb(129, 240, 230);
+$colorWhite: white;
+$colorGreen: rgb(55, 189, 66);
+$colorGray: rgb(66, 66, 66);
+$colorBlack: black;
+
 .flex-2{
     display: flex;
     width: 100%;
 }
 .flex-2-item:nth-child(1){
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.flex-2-item:nth-child(1) h2{
+    letter-spacing: 2px;
+    font-size: 3em;
+    margin: 0px;
+    color: $colorBlue;
 }
 
 .flex-2-item:nth-child(1) img{
@@ -18,7 +32,32 @@
 }
 
 .flex-2-item:nth-child(2) {
+    width: 50%;
     padding-top: 5%;
     display: flex;
     flex-direction: column;
 }
+
+.flex-2-item:nth-child(2) div p {
+    font-size: 1.4em;
+    text-align: justify;
+}
+
+.flex-2-item:nth-child(2) div button {
+    font-size: 1.2em;
+    text-align: justify;
+    padding: 5px 30px;
+}
+
+.flex-2-item:nth-child(2) div  {
+    margin-right: 10%;
+}
+
+.figure-fondo{
+    position: fixed;
+    z-index: -1;
+    bottom: 0px;
+    right: 0px;
+    height: 280px;
+    width: auto;
+  }

@@ -2,11 +2,13 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [CommonModule,MatMenuModule,MatIconModule],
+  imports: [CommonModule,MatMenuModule,MatIconModule,RouterLink
+  ],
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
