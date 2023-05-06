@@ -5,7 +5,7 @@
         <img src="/assets/comunity/panel-comunity.jpg"  alt="dsad" />
     </div>
     <div class="flex-2-item" *ngIf="viewNotes; else createNote">
-        <button class="note-add" mat-fab extended color="primary">
+        <button class="note-add" mat-fab extended color="primary" (click)="crearNote()">
             <mat-icon>add</mat-icon>
             Añadir nota
         </button>
@@ -22,10 +22,11 @@
     </div>
     <ng-template #createNote>
         <div class="flex-2-item">
-            <button class="note-volver" mat-fab extended color="primary" (click)="createNote()">
+            <button class="note-volver" mat-fab extended color="primary" (click)="viewNote()">
                 <mat-icon>reply</mat-icon>
             </button>
             <img src="../../../assets/comunity/panel-nota.png" alt="">
         </div>
     </ng-template>
 </div>
+<img src="../../../assets/fondo/figure-fondo.png" alt="" class="figure-fondo">

@@ -69,3 +69,12 @@ $colorBlack: black;
     background-color: $colorBlue;
     margin: 5%;
 }
+
+.figure-fondo{
+    position: fixed;
+    z-index: -1;
+    bottom: 0px;
+    right: 0px;
+    height: 280px;
+    width: auto;
+}

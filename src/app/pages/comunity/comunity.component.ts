@@ -15,7 +15,7 @@ import NavComponent from '../nav/nav.component';
 })
 export default  class ComunityComponent {
 
-  viewNotes:boolean = false; 
+  viewNotes:boolean = true; 
 
   notes = [
     {
@@ -37,5 +37,10 @@ export default  class ComunityComponent {
 
   menuPerfil(event:Event){}
 
-
+  viewNote(){
+    this.viewNotes = true;
+  }
+  crearNote(){
+    this.viewNotes = false;
+  }
 }
