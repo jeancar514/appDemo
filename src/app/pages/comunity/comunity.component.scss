@@ -1,0 +1,65 @@
+$colorBlue: rgb(22, 2, 199);
+$colorBlueAqua: rgb(178, 239, 241);
+$colorWhite: white;
+$colorGreen: rgb(55, 189, 66);
+$colorGray: rgb(66, 66, 66);
+$colorBlack: black;
+
+.flex-2{
+    display: flex;
+    width: 100%;
+}
+.flex-2-item:nth-child(1){
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-2-item:nth-child(1) h3{
+    font-size: 3.2em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 0px;
+    margin-right: 15%;
+}
+
+.flex-2-item:nth-child(1) img{
+    width: 90%;
+    text-align: center;
+}
+
+.flex-2-item:nth-child(2) {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.note-add{
+    width: 40%;
+    padding: 10px 20px;
+    margin:  10px 15%;
+    font-size: 1.5em;
+}
+.note-title{
+    text-align: start;
+    font-size: 3em; 
+    margin:  20px 15%;
+}
+.note-main{
+    display: flex;
+    align-items: center;
+    margin: 0px 5%;
+}
+.note-main p{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.note-main-img{
+    padding: 0px 5%;
+}
+
+.note-date  {
+    text-align: end;
+    margin-right: 10%;
+}

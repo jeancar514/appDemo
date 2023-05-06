@@ -1,0 +1,82 @@
+$colorBlue: rgb(22, 2, 199);
+$colorBlueAqua: rgb(178, 239, 241);
+$colorWhite: white;
+$colorGreen: rgb(55, 189, 66);
+$colorGray: rgb(66, 66, 66);
+$colorBlack: black;
+
+.flex-2{
+    display: flex;
+    width: 100%;
+    margin: 10px 5%;
+}
+
+.flex-2-item-user{
+    width: 20%;
+}
+.flex-2-item-user img{
+    width: 70%;
+}
+.flex-2-item-foro{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.foro-title{
+    display: flex;
+    align-items: center;
+}
+
+.foro-title h2{
+    font-size: 3.5em;
+    color: $colorBlue;
+    margin-right: 50px;
+}
+
+.foro-title button{
+    background-color: $colorBlue;
+}
+
+.foro-panel{
+    display: flex;
+    background-color: $colorBlueAqua;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.foro-panel div{
+    display: flex;
+    flex-direction: column;
+}
+
+.foro-panel div > *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0px;
+    height: 70px;
+}
+.foro-panel div > p {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.foro-panel div > button{
+    height: auto;
+    padding: 10px 20px ;
+    background-color: $colorBlue;
+    font-weight: 700;
+}
+.foro-panel div > img{
+    height: 30px;
+    padding: 10px 20px ;
+}
+.figure-fondo{
+    position: fixed;
+    z-index: -1;
+    bottom: 0px;
+    right: 0px;
+    height: 280px;
+    width: auto;
+}

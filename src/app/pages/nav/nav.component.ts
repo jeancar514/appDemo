@@ -2,7 +2,6 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
-import { MenuPerfilService } from './menu-perfil.service';
 
 @Component({
   selector: 'app-nav',
@@ -21,10 +20,9 @@ export default class NavComponent {
   }
 
 
-  constructor(private menuPerfilService: MenuPerfilService){}
+  constructor(){}
 
   menuPerfil(panelSelected:string){
-    this.menuPerfilService.panelSeleted = panelSelected
     this.menuPerfilEvent.emit(panelSelected);
 
   }

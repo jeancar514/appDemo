@@ -18,6 +18,32 @@ const routes: Routes = [
     loadComponent: () => import('./pages/perfil/perfil.component'),
     title:'App - Perfil'
   },
+  {
+    path:"redes",
+    loadComponent: () => import('./pages/redes/redes.component'),
+    title:'App - Redes'
+  },
+  {
+    path:"information",
+    loadComponent: () => import('./pages/information/information.component'),
+    title:'App - Informacion'
+  },
+  {
+    path:"team",
+    loadComponent: () => import('./pages/team/team.component'),
+    title:'App - Team'
+  },
+  {
+    path:"foro",
+    loadComponent: () => import('./pages/foro/foro.component'),
+    title:'App - Foro',
+  },
+  {
+    path:"comunity",
+    loadComponent: () => import('./pages/comunity/comunity.component'),
+    title:'App - comunity',
+  },
+  
 ];
 
 @NgModule({

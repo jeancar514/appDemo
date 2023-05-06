@@ -39,3 +39,12 @@ $colorGreen: rgb(55, 189, 66);
   width: 80%;
   margin: 20px 10%;
 }
+
+.figure-fondo{
+  position: fixed;
+  z-index: -1;
+  bottom: 0px;
+  right: 0px;
+  height: 280px;
+  width: auto;
+}

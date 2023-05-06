@@ -1,0 +1,31 @@
+$colorBlue: rgb(25, 0, 255);
+$colorBlueAqua: rgb(142, 248, 225);
+$colorWhite: white;
+$colorGreen: rgb(55, 189, 66);
+$colorGray: rgb(66, 66, 66);
+$colorBlack: black;
+
+.flex-colum{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-colum h2{
+    font-size: 2em;
+    text-align: center;
+    color: $colorGray;
+}
+
+.flex-colum img{
+    width: 70%;
+    z-index: 10;
+}
+
+.figure-fondo{
+    position: fixed;
+    z-index: -1;
+    bottom: 0px;
+    right: 0px;
+    height: 280px;
+    width: auto;
+}
