@@ -1,5 +1,5 @@
 $colorBlue: rgb(22, 2, 199);
-$colorBlueAqua: rgb(178, 239, 241);
+$colorBlueAqua: rgb(129, 240, 230);
 $colorWhite: white;
 $colorGreen: rgb(55, 189, 66);
 $colorGray: rgb(66, 66, 66);
@@ -22,6 +22,11 @@ $colorBlack: black;
     letter-spacing: 2px;
     margin: 0px;
     margin-right: 15%;
+    color: $colorBlue;
+}
+
+.flex-2-item:nth-child(1) h3 span{
+    color: $colorBlueAqua;
 }
 
 .flex-2-item:nth-child(1) img{
@@ -44,6 +49,7 @@ $colorBlack: black;
     text-align: start;
     font-size: 3em; 
     margin:  20px 15%;
+    color: $colorBlue;
 }
 .note-main{
     display: flex;

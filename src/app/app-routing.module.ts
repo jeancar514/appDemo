@@ -41,9 +41,13 @@ const routes: Routes = [
   {
     path:"comunity",
     loadComponent: () => import('./pages/comunity/comunity.component'),
-    title:'App - comunity',
+    title:'App - Comunity',
   },
-  
+  {
+    path:"novedades",
+    loadComponent: () => import('./pages/novedades/novedades.component'),
+    title:'App - Novedades',
+  },
 ];
 
 @NgModule({

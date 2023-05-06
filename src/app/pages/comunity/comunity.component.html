@@ -1,7 +1,7 @@
 <app-nav (menuPerfilEvent)="menuPerfil($event)" ></app-nav>
 <div class="flex-2">
     <div class="flex-2-item">
-        <h3>COMUNIDAD TU MARCA</h3>
+        <h3>COMUNIDAD <span>TU MARCA</span></h3>
         <img src="/assets/comunity/panel-comunity.jpg"  alt="dsad" />
     </div>
     <div class="flex-2-item" *ngIf="viewNotes; else createNote">
@@ -9,7 +9,7 @@
             <mat-icon>add</mat-icon>
             Añadir nota
         </button>
-        <h3 class="note-title">Notas Recientes</h3>
+        <h3 class="note-title">Notas recientes</h3>
         <div >
             <div *ngFor="let note of notes; index as i;">
                 <div class="note-main">
